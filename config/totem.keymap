@@ -33,14 +33,14 @@
     combos {
         compatible = "zmk,combos";
 
-        gaming_tog {
-            bindings = <&tog 7>;
+        gaming_to {
+            bindings = <&to 7>;
             key-positions = <20 31>;
             layers = <0>;
         };
 
-        default_tog {
-            bindings = <&tog 0>;
+        default_to {
+            bindings = <&to 0>;
             key-positions = <20 31>;
             layers = <7>;
         };
