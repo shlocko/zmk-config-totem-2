@@ -33,16 +33,16 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_esc {
-            timeout-ms = <50>;
-            key-positions = <0 1>;
-            bindings = <&kp ESC>;
+        gaming_tog {
+            bindings = <&tog 7>;
+            key-positions = <20 31>;
+            layers = <0>;
         };
 
-        combo_tvp {
-            timeout-ms = <100>;
-            key-positions = <11 12 13>;
+        default_tog {
             bindings = <&tog 0>;
+            key-positions = <20 31>;
+            layers = <7>;
         };
     };
 
@@ -149,6 +149,15 @@
         &kp F11  &kp F4  &kp F5   &kp F6     &trans     &trans  &kp LSHFT  &kp LCTRL  &kp LALT  &kp LGUI
 &trans  &kp F10  &kp F1  &kp F2   &kp F3     &trans     &trans  &trans     &trans     &trans    &trans    &trans
                          &kp ESC  &kp SPACE  &kp TAB    &trans  &trans     &trans
+            >;
+        };
+
+        gaming {
+            bindings = <
+        &kp TAB    &kp Q   &trans     &kp E      &kp R        &trans  &trans  &trans  &trans  &trans
+        &kp LSHFT  &kp A   &kp W      &kp D      &kp F        &trans  &trans  &trans  &trans  &trans
+&trans  &kp LCTRL  &trans  &kp S      &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                           &lt 5 ESC  &kp SPACE  &lt 5 TAB    &trans  &trans  &trans
             >;
         };
     };
