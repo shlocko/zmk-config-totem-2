@@ -152,8 +152,7 @@
             >;
         };
     };
-};
-        mouse_layer {
+            mouse_layer {
             display-name = "MSE";
             bindings = <           
             &trans          &trans        &trans        &trans       &trans           &msc SCRL_LEFT &msc SCRL_DOWN &mmv MOVE_UP   &msc SCRL_UP    &msc SCRL_RIGHT
@@ -162,3 +161,4 @@
                                           &trans        &trans       &trans           &mkp LCLK      &mkp RCLK       &trans
             >;
         };
+};
