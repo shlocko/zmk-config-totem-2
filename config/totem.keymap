@@ -40,6 +40,16 @@
             key-positions = <20 31>;
             layers = <1>;
         };
+
+        backslash {
+            bindings = <&kp BACKSLASH>;
+            key-positions = <24 23>;
+        };
+
+        under {
+            bindings = <&kp UNDERSCORE>;
+            key-positions = <13 12>;
+        };
     };
 
     macros {
