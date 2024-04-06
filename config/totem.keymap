@@ -41,14 +41,9 @@
             layers = <1>;
         };
 
-        backslash {
-            bindings = <&kp BACKSLASH>;
-            key-positions = <24 23>;
-        };
-
-        under {
+        underscore {
             bindings = <&kp UNDERSCORE>;
-            key-positions = <13 12>;
+            key-positions = <24 23>;
         };
 
         capsword {
