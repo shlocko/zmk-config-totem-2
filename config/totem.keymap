@@ -34,7 +34,7 @@
         compatible = "zmk,combos";
 
         gaming_to {
-            bindings = <&to 1>;
+            bindings = <&to 5>;
             key-positions = <20 31>;
             layers = <0>;
         };
@@ -42,7 +42,7 @@
         default_to {
             bindings = <&to 0>;
             key-positions = <20 31>;
-            layers = <1>;
+            layers = <5>;
         };
 
         underscore {
@@ -95,19 +95,55 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-       &kp SQT     &kp COMMA   &kp PERIOD   &kp P        &kp Y        &kp F      &kp G            &kp C         &kp R       &kp L
-       &mt LGUI A  &mt LALT O  &mt LCTRL E  &mt LSHFT U  &kp I        &kp D      &mt RSHFT H      &mt RCTRL T   &mt RALT N  &mt RGUI S
-&kp Q  &kp SLASH   &kp Q       &kp J        &kp K        &kp X        &kp B      &kp M            &kp W         &kp V       &kp Z       &kp SEMICOLON
-                               &lt 2 ESC    &lt 3 SPACE  &lt 4 TAB    &lt 5 RET  &lt 6 BACKSPACE  &lt 7 DELETE
+       &kp SQT    &kp COMMA  &kp PERIOD  &kp P      &kp Y        &kp F      &kp G             &kp C          &kp R  &kp L
+       &kp A      &kp O      &kp E       &kp U      &kp I        &kp D      &kp H             &kp T          &kp N  &kp S
+&kp Q  &kp SLASH  &kp Q      &kp J       &kp K      &kp X        &kp B      &kp M             &kp W          &kp V  &kp Z  &kp SEMICOLON
+                             &kp LALT    &kp LCTRL  &kp LCTRL    &lt 9 RET  &lt 10 BACKSPACE  &lt 11 DELETE
+            >;
+        };
+
+        L1 {
+            bindings = <
+        &kp F12  &kp F7  &kp F8  &kp F9  &trans    &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_REDO
+        &kp F11  &kp F4  &kp F5  &kp F6  &trans    &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &kp ESC
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &kp HOME    &kp PG_DN    &kp PG_UP   &kp END    &kp CAPS    &trans
+                         &trans  &sl 2   &trans    &trans      &sl 0        &trans
+            >;
+        };
+
+        L2 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &sl 1   &trans    &trans  &sl 0   &trans
+            >;
+        };
+
+        R1 {
+            bindings = <
+        &kp LS(CARET)  &kp N7  &kp N8  &kp N9  &kp N0       &kp LS(STAR)  &kp LS(RBRC)   &kp RBKT    &kp LS(RPAR)  &kp LS(AMPS)
+        &kp SEMI       &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp LS(PLUS)  &kp LS(LBRC)   &kp LBKT    &kp LS(LPAR)  &kp SEMI
+&trans  &kp GRAVE      &kp N1  &kp N2  &kp N3  &kp BSLH     &kp LS(PIPE)  &kp LS(POUND)  &kp LS(AT)  &kp LS(EXCL)  &kp LS(TILDE)  &none
+                               &trans  &sl 4   &trans       &trans        &sl 0          &trans
+            >;
+        };
+
+        R2 {
+            bindings = <
+        &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans    &trans  &kp DOLLAR  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans      &trans  &trans  &trans  &trans
+                        &trans  &sl 3   &trans    &trans  &sl 0       &trans
             >;
         };
 
         gaming {
             bindings = <
-       &kp TAB    &kp Q  &none       &kp E      &kp R        &none  &none  &none  &none  &none
-       &kp LSHFT  &kp A  &kp W       &kp D      &kp F        &none  &none  &none  &none  &none
-&none  &kp LCTRL  &kp B  &kp S       &kp H      &kp J        &none  &none  &none  &none  &none  &none
-                         &kp ESCAPE  &kp SPACE  &lt 6 TAB    &none  &none  &none
+       &kp TAB    &kp Q  &none       &kp E      &kp R         &none  &none  &none  &none  &none
+       &kp LSHFT  &kp A  &kp W       &kp D      &kp F         &none  &none  &none  &none  &none
+&none  &kp LCTRL  &kp B  &kp S       &kp H      &kp J         &none  &none  &none  &none  &none  &none
+                         &kp ESCAPE  &kp SPACE  &lt 10 TAB    &none  &none  &none
             >;
         };
 
