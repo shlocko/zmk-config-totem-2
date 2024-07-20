@@ -126,16 +126,16 @@
 
         R1 {
             bindings = <
-        &kp LS(CARET)  &kp N7  &kp N8  &kp N9  &kp N0       &kp LS(STAR)  &kp LS(RBRC)   &kp RBKT    &kp LS(RPAR)  &kp LS(AMPS)
-        &kp SEMI       &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp LS(PLUS)  &kp LS(LBRC)   &kp LBKT    &kp LS(LPAR)  &kp SEMI
-&trans  &kp GRAVE      &kp N1  &kp N2  &kp N3  &kp BSLH     &kp LS(PIPE)  &kp LS(POUND)  &kp LS(AT)  &kp LS(EXCL)  &kp LS(TILDE)  &none
-                               &trans  &to 4   &trans       &trans        &to 0          &trans
+        &kp LS(CARET)  &kp N7  &kp N8  &kp N9  &kp N0       &kp MINUS       &kp LS(RBRC)   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LS(AMPS)
+        &kp SEMI       &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp LS(PLUS)    &kp LS(LBRC)   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp SEMI
+&trans  &kp GRAVE      &kp N1  &kp N2  &kp N3  &kp BSLH     &kp UNDERSCORE  &kp LS(POUND)  &kp LS(AT)             &kp LS(EXCL)       &kp ASTERISK  &trans
+                               &trans  &to 4   &trans       &trans          &to 0          &trans
             >;
         };
 
         R2 {
             bindings = <
-        &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &trans      &trans  &trans  &trans
+        &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &kp TILDE   &trans  &trans  &trans
         &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &kp DOLLAR  &trans  &trans  &trans
 &trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans      &trans  &trans  &trans  &trans
                          &trans  &to 3   &trans    &trans  &to 0       &trans
