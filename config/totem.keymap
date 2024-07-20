@@ -110,7 +110,7 @@
             bindings = <
         &none  &none    &none    &none          &none      &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_REDO
         &none  &kp TAB  &kp DEL  &kp BACKSPACE  &kp ESC    &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &none
-&trans  &none  &none    &none    &none          &none      &kp HOME    &kp PG_DN    &kp PG_UP   &kp END    &kp CAPS    &trans
+&trans  &none  &none    &none    &kp ENTER      &none      &kp HOME    &kp PG_DN    &kp PG_UP   &kp END    &kp CAPS    &trans
                         &trans   &to 2          &trans     &trans      &to 0        &trans
             >;
         };
