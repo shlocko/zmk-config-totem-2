@@ -53,6 +53,11 @@
             bindings = <&to 0>;
             key-positions = <33 36>;
         };
+
+        esc {
+            bindings = <&kp ESC>;
+            key-positions = <2 3>;
+        };
     };
 
     macros {
@@ -121,10 +126,10 @@
 
         R2 {
             bindings = <
-            &none  &none         &none         &none         &out OUT_BLE    &kp C_VOL_UP  &kp TILDE   &trans  &trans  &trans
-            &none  &bt BT_SEL 3  &bt BT_SEL 4  &none         &out OUT_USB    &kp K_MUTE    &kp DOLLAR  &trans  &trans  &trans
-&bt BT_CLR  &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &kp C_VOL_DN  &kp ASTRK   &trans  &trans  &trans  &trans
-                                 &trans        &to 0         &trans          &trans        &to 4       &trans
+            &kp TAB  &none         &none         &none         &out OUT_BLE    &kp C_VOL_UP  &kp TILDE   &kp PRCNT  &kp CARET  &kp BACKSPACE
+            &kp ESC  &bt BT_SEL 3  &bt BT_SEL 4  &none         &out OUT_USB    &kp K_MUTE    &kp DOLLAR  &kp AMPS   &kp COLON  &kp ENTER
+&bt BT_CLR  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &kp C_VOL_DN  &kp ASTRK   &trans     &trans     &kp DEL        &trans
+                                   &trans        &to 0         &trans          &trans        &to 4       &trans
             >;
         };
 
