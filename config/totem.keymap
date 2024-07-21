@@ -23,11 +23,6 @@
 #define TVP1 4
 #define TVP2 5
 
-&mt {
-    flavor = "tap-preferred";
-    tapping-term-ms = <150>;
-};
-
 / {
     combos {
         compatible = "zmk,combos";
@@ -102,34 +97,25 @@
        &kp SQT    &kp COMMA  &kp PERIOD  &kp P  &kp Y        &kp F      &kp G  &kp C           &kp R  &kp L
        &kp A      &kp O      &kp E       &kp U  &kp I        &kp D      &kp H  &kp T           &kp N  &kp S
 &kp Q  &kp SLASH  &kp Q      &kp J       &kp K  &kp X        &kp B      &kp M  &kp W           &kp V  &kp Z  &kp LEFT_GUI
-                             &kp LALT    &to 1  &kp LCTRL    &kp SPACE  &to 3  &kp LEFT_SHIFT
-            >;
-        };
-
-        L1 {
-            bindings = <
-        &none  &none    &none    &none          &none      &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT  &kp K_REDO
-        &none  &kp TAB  &kp DEL  &kp BACKSPACE  &kp ESC    &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT  &none
-&trans  &none  &none    &none    &kp ENTER      &none      &kp HOME    &kp PG_DN    &kp PG_UP   &kp END    &kp CAPS    &trans
-                        &trans   &to 2          &trans     &trans      &to 0        &trans
-            >;
-        };
-
-        L2 {
-            bindings = <
-            &trans  &trans        &trans        &trans        &out OUT_BLE    &trans      &trans        &trans        &trans  &trans
-            &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &out OUT_USB    &kp K_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &trans  &trans
-&bt BT_CLR  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &trans      &trans        &trans        &trans  &trans  &trans
-                                  &trans        &to 1         &trans          &trans      &to 0         &trans
+                             &kp LALT    &to 2  &kp LCTRL    &kp SPACE  &to 1  &kp LEFT_SHIFT
             >;
         };
 
         R1 {
             bindings = <
-        &kp LS(CARET)  &kp N7  &kp N8  &kp N9  &kp N0       &kp MINUS       &kp LS(RBRC)   &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp LS(AMPS)
-        &kp SEMI       &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp LS(PLUS)    &kp LS(LBRC)   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp SEMI
-&trans  &kp GRAVE      &kp N1  &kp N2  &kp N3  &kp BSLH     &kp UNDERSCORE  &kp LS(POUND)  &kp LS(AT)             &kp LS(EXCL)       &kp ASTERISK  &trans
-                               &trans  &to 4   &trans       &trans          &to 0          &trans
+        &kp TAB    &kp N7  &kp N8  &kp N9  &kp N0       &kp MINUS       &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp BACKSPACE
+        &kp ESC    &kp N4  &kp N5  &kp N6  &kp EQUAL    &kp PLUS        &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp ENTER
+&trans  &kp GRAVE  &kp N1  &kp N2  &kp N3  &kp BSLH     &kp UNDERSCORE  &kp POUND        &kp AT_SIGN            &kp EXCLAMATION    &kp DELETE     &trans
+                           &trans  &to 3   &trans       &trans          &to 0            &trans
+            >;
+        };
+
+        L1 {
+            bindings = <
+        &kp ESC  &none  &none   &none  &none     &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT         &kp BACKSPACE
+        &kp TAB  &none  &none   &none  &none     &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT         &kp ENTER
+&trans  &none    &none  &none   &none  &none     &kp HOME    &kp PG_DN    &kp PG_UP   &mt CAPSLOCK END  &kp DELETE     &trans
+                        &trans  &to 4  &trans    &trans      &to 0        &trans
             >;
         };
 
@@ -138,7 +124,16 @@
         &kp F12  &kp F7  &kp F8  &kp F9  &trans    &trans  &kp TILDE   &trans  &trans  &trans
         &kp F11  &kp F4  &kp F5  &kp F6  &trans    &trans  &kp DOLLAR  &trans  &trans  &trans
 &trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &trans  &trans      &trans  &trans  &trans  &trans
-                         &trans  &to 3   &trans    &trans  &to 0       &trans
+                         &trans  &to 1   &trans    &trans  &to 0       &trans
+            >;
+        };
+
+        L2 {
+            bindings = <
+            &trans  &trans        &trans        &trans        &out OUT_BLE    &trans      &trans        &trans        &trans  &trans
+            &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &out OUT_USB    &kp K_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &trans  &trans
+&bt BT_CLR  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &trans      &trans        &trans        &trans  &trans  &trans
+                                  &trans        &to 2         &trans          &trans      &to 0         &trans
             >;
         };
 
