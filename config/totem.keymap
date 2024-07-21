@@ -99,10 +99,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-        &kp SQT    &kp COMMA  &kp PERIOD  &kp P      &kp Y        &kp F           &kp G  &kp C         &kp R  &kp L
-        &kp A      &kp O      &kp E       &kp U      &kp I        &kp D           &kp H  &kp T         &kp N  &kp S
-&kp AT  &kp SLASH  &kp Q      &kp J       &kp K      &kp X        &kp B           &kp M  &kp W         &kp V  &kp Z  &kp SEMICOLON
-                              &kp LALT    &kp SPACE  &kp LCTRL    &kp LEFT_SHIFT  &to 1  &kp LEFT_GUI
+        &kp SQT    &kp COMMA  &kp PERIOD      &kp P      &kp Y        &kp F         &kp G  &kp C         &kp R  &kp L
+        &kp A      &kp O      &kp E           &kp U      &kp I        &kp D         &kp H  &kp T         &kp N  &kp S
+&kp AT  &kp SLASH  &kp Q      &kp J           &kp K      &kp X        &kp B         &kp M  &kp W         &kp V  &kp Z  &kp SEMICOLON
+                              &kp LEFT_SHIFT  &kp SPACE  &kp LCTRL    &kp LEFT_ALT  &to 1  &kp LEFT_GUI
             >;
         };
 
@@ -110,7 +110,7 @@
             bindings = <
            &kp N0     &kp N7  &kp N8        &kp N9  &kp TAB      &kp BSPC        &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp MINUS
            &kp EQUAL  &kp N4  &kp N5        &kp N6  &kp ESC      &kp RET         &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp PLUS
-&kp EQUAL  &kp BSLH   &kp N1  &kp N2        &kp N3  &kp GRAVE    &kp DEL         &kp POUND        &kp EXCLAMATION        &to 3              &kp UNDER  &kp MINUS
+&kp COLON  &kp BSLH   &kp N1  &kp N2        &kp N3  &kp GRAVE    &kp DEL         &kp POUND        &kp EXCLAMATION        &to 3              &kp UNDER  &kp MINUS
                               &kp LEFT_ALT  &to 0   &kp LCTRL    &kp LEFT_SHIFT  &to 2            &kp LEFT_GUI
             >;
         };
