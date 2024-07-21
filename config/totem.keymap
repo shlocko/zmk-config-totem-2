@@ -106,30 +106,30 @@
             >;
         };
 
-        R1 {
+        symnum {
             bindings = <
-        &kp TAB    &kp N7  &kp N8        &kp N9  &kp N0       &kp MINUS       &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp BACKSPACE
-        &kp ESC    &kp N4  &kp N5        &kp N6  &kp EQUAL    &kp PLUS        &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp ENTER
-&trans  &kp GRAVE  &kp N1  &kp N2        &kp N3  &kp BSLH     &kp UNDERSCORE  &kp POUND        &kp EXCLAMATION        &to 3              &kp DELETE     &trans
-                           &kp LEFT_ALT  &to 0   &kp LCTRL    &kp LEFT_SHIFT  &to 2            &kp LEFT_GUI
+           &kp N0     &kp N7  &kp N8        &kp N9  &kp TAB      &kp BSPC        &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp MINUS
+           &kp EQUAL  &kp N4  &kp N5        &kp N6  &kp ESC      &kp RET         &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp PLUS
+&kp EQUAL  &kp BSLH   &kp N1  &kp N2        &kp N3  &kp GRAVE    &kp DEL         &kp POUND        &kp EXCLAMATION        &to 3              &kp UNDER  &kp MINUS
+                              &kp LEFT_ALT  &to 0   &kp LCTRL    &kp LEFT_SHIFT  &to 2            &kp LEFT_GUI
             >;
         };
 
-        L1 {
+        navfn {
             bindings = <
-        &kp TAB  &kp F7  &kp F8  &kp F9  &kp F12    &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT         &kp BACKSPACE
-        &kp ESC  &kp F4  &kp F5  &kp F6  &kp F11    &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT         &kp ENTER
-&trans  &none    &kp F1  &kp F2  &kp F3  &kp F10    &kp HOME    &kp PG_DN    &kp PG_UP   &mt CAPSLOCK END  &kp DELETE     &trans
-                         &trans  &to 0   &trans     &trans      &to 0        &trans
+        &kp F12  &kp F7  &kp F8  &kp F9  &trans    &kp K_UNDO  &kp K_PASTE  &kp K_COPY  &kp K_CUT         &none
+        &kp F11  &kp F4  &kp F5  &kp F6  &trans    &kp LEFT    &kp DOWN     &kp UP      &kp RIGHT         &none
+&trans  &kp F10  &kp F1  &kp F2  &kp F3  &trans    &kp HOME    &kp PG_DN    &kp PG_UP   &mt CAPSLOCK END  &none  &trans
+                         &trans  &to 0   &trans    &trans      &to 0        &trans
             >;
         };
 
-        R2 {
+        altsym {
             bindings = <
-            &kp TAB  &none         &none         &none         &out OUT_BLE    &kp C_VOL_UP  &kp TILDE   &kp PRCNT  &kp CARET  &kp BACKSPACE
-            &kp ESC  &bt BT_SEL 3  &bt BT_SEL 4  &none         &out OUT_USB    &kp K_MUTE    &kp DOLLAR  &kp AMPS   &kp COLON  &kp ENTER
-&bt BT_CLR  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &kp C_VOL_DN  &kp ASTRK   &trans     &trans     &kp DEL        &trans
-                                   &trans        &to 0         &trans          &trans        &to 4       &trans
+            &kp TAB  &none         &none         &out OUT_BLE  &kp TAB    &kp BACKSPACE  &kp TILDE   &kp PRCNT  &kp CARET  &kp C_VOL_UP
+            &kp ESC  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_USB  &kp ESC    &kp ENTER      &kp DOLLAR  &kp AMPS   &kp COLON  &kp K_MUTE
+&bt BT_CLR  &none    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans     &kp DEL        &kp ASTRK   &trans     &trans     &kp C_VOL_DN  &trans
+                                   &trans        &to 0         &trans     &trans         &to 1       &trans
             >;
         };
 
