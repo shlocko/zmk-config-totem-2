@@ -198,7 +198,7 @@
         sims {
             bindings = <
         &kp COMMA  &kp DOT  &kp PG_UP  &kp PG_DN  &kp N1      &trans  &trans  &trans  &trans  &trans
-        &kp N9     &kp A    &kp A      &kp D      &kp N2      &trans  &trans  &trans  &trans  &trans
+        &kp N9     &kp A    &kp W      &kp D      &kp N2      &trans  &trans  &trans  &trans  &trans
 &trans  &kp N0     &none    &kp S      &kp M      &kp N3      &trans  &trans  &trans  &trans  &trans  &trans
                             &kp LBKT   &lt 9 ESC  &kp RBKT    &trans  &trans  &trans
             >;
