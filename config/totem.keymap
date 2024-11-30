@@ -169,6 +169,15 @@
                             &kp ESCAPE  &kp SPACE  &lt 1 TAB    &none  &none  &none
             >;
         };
+
+        factorio {
+            bindings = <
+        &kp LA(A)  &kp LA(B)  &kp LA(R)  &kp LA(G)  &trans       &trans  &trans  &trans  &trans  &trans
+        &kp T      &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LA(D)    &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans     &trans     &trans       &trans  &trans  &trans
+            >;
+        };
     };
 
     mouse_layer {
