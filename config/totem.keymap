@@ -206,10 +206,10 @@
 
         qwerty {
             bindings = <
-        &kp Q  &kp W  &kp E    &kp R        &kp T      &kp Y    &kp U     &kp I      &kp O    &kp P
-        &kp A  &kp S  &kp D    &kp F        &kp G      &kp H    &kp J     &kp K      &kp L    &kp SEMI
-&trans  &kp Z  &kp X  &kp C    &kp V        &kp B      &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
-                      &kp ESC  &lt 9 SPACE  &kp TAB    &kp RET  &kp BSPC  &kp DEL
+               &kp Q  &kp W  &kp E    &kp R        &kp T      &kp Y    &kp U     &kp I      &kp O    &kp P
+               &kp A  &kp S  &kp D    &kp F        &kp G      &kp H    &kp J     &kp K      &kp L    &kp SEMI
+&kp LS(LC(C))  &kp Z  &kp X  &kp C    &kp V        &kp B      &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
+                             &kp ESC  &lt 9 SPACE  &kp TAB    &kp RET  &kp BSPC  &kp DEL
             >;
         };
 
