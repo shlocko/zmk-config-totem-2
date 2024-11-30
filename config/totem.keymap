@@ -66,6 +66,22 @@
             key-positions = <20 33>;
             timeout-ms = <300>;
         };
+
+        qwerty_to {
+            bindings = <&to 8>;
+            key-positions = <4 5>;
+        };
+
+        sims_to {
+            bindings = <&to 7>;
+            key-positions = <3 6>;
+        };
+
+        default_to_from_anywhre {
+            bindings = <&to 0>;
+            key-positions = <2 7 6 3>;
+            layers = <7 8>;
+        };
     };
 
     macros {
@@ -176,6 +192,33 @@
         &kp T      &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LA(D)    &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
                               &trans     &trans     &trans       &trans  &trans  &trans
+            >;
+        };
+
+        sims {
+            bindings = <
+        &kp COMMA  &kp DOT  &kp PG_UP  &kp PG_DN  &kp N1      &trans  &trans  &trans  &trans  &trans
+        &kp N9     &kp A    &kp A      &kp D      &kp N2      &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0     &none    &kp S      &kp M      &kp N3      &trans  &trans  &trans  &trans  &trans  &trans
+                            &kp LBKT   &lt 9 ESC  &kp RBKT    &trans  &trans  &trans
+            >;
+        };
+
+        qwerty {
+            bindings = <
+        &kp Q  &kp W  &kp E    &kp R        &kp T      &kp Y    &kp U     &kp I      &kp O    &kp P
+        &kp A  &kp S  &kp D    &kp F        &kp G      &kp H    &kp J     &kp K      &kp L    &kp SEMI
+&trans  &kp Z  &kp X  &kp C    &kp V        &kp B      &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
+                      &kp ESC  &lt 9 SPACE  &kp TAB    &kp RET  &kp BSPC  &kp DEL
+            >;
+        };
+
+        arrowsnums {
+            bindings = <
+        &trans  &trans    &trans    &trans     &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
+        &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
+&trans  &trans  &trans    &kp DOWN  &trans     &trans    &kp N1  &kp N1  &kp N2  &kp N3  &trans  &trans
+                          &trans    &trans     &trans    &trans  &kp N0  &trans
             >;
         };
     };
