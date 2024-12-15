@@ -134,10 +134,10 @@
             //                                     ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛   ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
 
             bindings = <
-                      &kp SQT    &kp COMMA  &kp PERIOD            &kp P      &kp Y                 &kp F               &kp G                &kp C                   &kp R  &kp L
-                      &kp A      &kp O      &kp E                 &kp U      &kp I                 &kp D               &kp H                &kp T                   &kp N  &kp S
-&mt LCTRL UNDERSCORE  &kp SLASH  &kp Q      &kp J                 &kp K      &kp X                 &kp B               &kp M                &kp W                   &kp V  &kp Z  &mt LEFT_GUI SEMI
-                                            &mt LEFT_CONTROL ESC  &kp SPACE  &mt LEFT_SHIFT TAB    &mt LEFT_ALT ENTER  &layer_tap_hold 1 1  &mt LEFT_GUI BACKSPACE
+                 &kp SQT    &kp COMMA  &kp PERIOD            &kp P      &kp Y                 &kp F               &kp G                &kp C                   &kp R  &kp L
+                 &kp A      &kp O      &kp E                 &kp U      &kp I                 &kp D               &kp H                &kp T                   &kp N  &kp S
+&mt LCTRL MINUS  &kp SLASH  &kp Q      &kp J                 &kp K      &kp X                 &kp B               &kp M                &kp W                   &kp V  &kp Z  &mt LEFT_GUI SEMI
+                                       &mt LEFT_CONTROL ESC  &kp SPACE  &mt LEFT_SHIFT TAB    &mt LEFT_ALT ENTER  &layer_tap_hold 1 1  &mt LEFT_GUI BACKSPACE
             >;
         };
 
@@ -145,7 +145,7 @@
             bindings = <
            &kp N0     &kp N7  &kp N8  &kp N9  &kp TAB      &kp BSPC  &kp RIGHT_BRACE  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACKET  &kp MINUS
            &kp EQUAL  &kp N4  &kp N5  &kp N6  &kp ESC      &kp RET   &kp LEFT_BRACE   &kp LEFT_PARENTHESIS   &kp LEFT_BRACKET   &kp PLUS
-&kp COLON  &kp BSLH   &kp N1  &kp N2  &kp N3  &kp GRAVE    &kp DEL   &kp POUND        &kp EXCLAMATION        &to 3              &kp UNDER  &mt LEFT_GUI MINUS
+&kp COLON  &kp BSLH   &kp N1  &kp N2  &kp N3  &kp GRAVE    &kp DEL   &kp POUND        &kp EXCLAMATION        &to 3              &kp GREATER_THAN  &mt LEFT_GUI MINUS
                               &trans  &to 0   &trans       &trans    &to 2            &trans
             >;
         };
