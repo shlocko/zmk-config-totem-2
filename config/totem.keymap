@@ -70,16 +70,6 @@
             timeout-ms = <300>;
         };
 
-        qwerty_to {
-            bindings = <&to 0>;
-            key-positions = <4 5>;
-        };
-
-        sims_to {
-            bindings = <&to 0>;
-            key-positions = <3 6>;
-        };
-
         default_to_from_anywhre {
             bindings = <&to 0>;
             key-positions = <2 7 6 3>;
