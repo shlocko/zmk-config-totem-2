@@ -33,7 +33,7 @@
         compatible = "zmk,combos";
 
         gaming_to {
-            bindings = <&to 5>;
+            bindings = <&to 4>;
             key-positions = <20 31>;
             layers = <0>;
         };
@@ -41,7 +41,7 @@
         default_to {
             bindings = <&to 0>;
             key-positions = <20 31>;
-            layers = <5>;
+            layers = <4>;
         };
 
         underscore {
@@ -71,19 +71,18 @@
         };
 
         qwerty_to {
-            bindings = <&to 8>;
+            bindings = <&to 0>;
             key-positions = <4 5>;
         };
 
         sims_to {
-            bindings = <&to 7>;
+            bindings = <&to 0>;
             key-positions = <3 6>;
         };
 
         default_to_from_anywhre {
             bindings = <&to 0>;
             key-positions = <2 7 6 3>;
-            layers = <7 8>;
         };
     };
 
@@ -171,21 +170,12 @@
             >;
         };
 
-        L2 {
-            bindings = <
-            &trans  &trans        &trans        &trans        &out OUT_BLE    &trans      &trans        &trans        &trans  &trans
-            &trans  &bt BT_SEL 3  &bt BT_SEL 4  &trans        &out OUT_USB    &kp K_MUTE  &kp C_VOL_UP  &kp C_VOL_DN  &trans  &trans
-&bt BT_CLR  &trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &trans          &trans      &trans        &trans        &trans  &trans  &trans
-                                  &trans        &to 0         &trans          &trans      &to 0         &trans
-            >;
-        };
-
         gaming {
             bindings = <
        &kp LEFT_ALT  &kp Q  &kp ENTER  &kp E      &kp R        &kp F  &kp G  &kp C  &kp R  &kp L
        &kp LSHFT     &kp A  &kp W      &kp D      &kp F        &kp D  &kp H  &kp T  &kp N  &kp S
 &none  &kp LCTRL     &kp B  &kp S      &kp H      &kp J        &kp B  &kp M  &kp W  &kp V  &kp Z  &kp P
-                            &lt 6 ESC  &kp SPACE  &lt 1 TAB    &none  &none  &none
+                            &lt 5 ESC  &kp SPACE  &lt 1 TAB    &none  &none  &none
             >;
         };
 
@@ -195,33 +185,6 @@
         &kp T      &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LA(D)    &trans  &trans  &trans  &trans  &trans
 &trans  &trans     &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
                               &trans     &trans     &trans       &trans  &trans  &trans
-            >;
-        };
-
-        sims {
-            bindings = <
-        &kp COMMA  &kp DOT  &kp PG_UP  &kp PG_DN  &kp N1      &trans  &trans  &trans  &trans  &trans
-        &kp N9     &kp A    &kp W      &kp D      &kp N2      &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0     &none    &kp S      &kp M      &kp N3      &trans  &trans  &trans  &trans  &trans  &trans
-                            &kp LBKT   &lt 9 ESC  &kp RBKT    &trans  &trans  &trans
-            >;
-        };
-
-        qwerty {
-            bindings = <
-               &kp Q  &kp W  &kp E    &kp R        &kp T      &kp Y    &kp U     &kp I      &kp O    &kp P
-               &kp A  &kp S  &kp D    &kp F        &kp G      &kp H    &kp J     &kp K      &kp L    &kp SEMI
-&kp LS(LC(C))  &kp Z  &kp X  &kp C    &kp V        &kp B      &kp N    &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp SQT
-                             &kp ESC  &lt 9 SPACE  &kp TAB    &kp RET  &kp BSPC  &kp DEL
-            >;
-        };
-
-        arrowsnums {
-            bindings = <
-        &trans  &trans    &trans    &trans     &trans    &trans  &kp N7  &kp N8  &kp N9  &trans
-        &trans  &kp LEFT  &kp UP    &kp RIGHT  &trans    &trans  &kp N4  &kp N5  &kp N6  &trans
-&trans  &trans  &trans    &kp DOWN  &trans     &trans    &kp N1  &kp N1  &kp N2  &kp N3  &trans  &trans
-                          &trans    &trans     &trans    &trans  &kp N0  &trans
             >;
         };
     };
