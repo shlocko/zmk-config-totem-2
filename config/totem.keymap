@@ -68,6 +68,7 @@
             bindings = <&mo 2>;
             key-positions = <20 33>;
             timeout-ms = <300>;
+            layers = <0 1 2 3>;
         };
 
         default_to_from_anywhre {
