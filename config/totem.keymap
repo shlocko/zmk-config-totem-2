@@ -75,6 +75,11 @@
             bindings = <&to 0>;
             key-positions = <2 7 6 3>;
         };
+
+        league {
+            bindings = <&to 5>;
+            key-positions = <4 5>;
+        };
     };
 
     macros {
@@ -163,19 +168,19 @@
 
         gaming {
             bindings = <
-       &kp LEFT_ALT  &kp Q  &kp ENTER  &kp E      &kp R        &kp F  &kp G  &kp C  &kp R  &kp L
+       &kp LEFT_ALT  &kp Q  &kp W      &kp E      &kp R        &kp F  &kp G  &kp C  &kp R  &kp L
        &kp LSHFT     &kp A  &kp W      &kp D      &kp F        &kp D  &kp H  &kp T  &kp N  &kp S
 &none  &kp LCTRL     &kp B  &kp S      &kp H      &kp J        &kp B  &kp M  &kp W  &kp V  &kp Z  &kp P
                             &lt 5 ESC  &kp SPACE  &lt 1 TAB    &none  &none  &none
             >;
         };
 
-        factorio {
+        league {
             bindings = <
-        &kp LA(A)  &kp LA(B)  &kp LA(R)  &kp LA(G)  &trans       &trans  &trans  &trans  &trans  &trans
-        &kp T      &kp LC(V)  &kp LC(C)  &kp LC(X)  &kp LA(D)    &trans  &trans  &trans  &trans  &trans
-&trans  &trans     &trans     &trans     &trans     &trans       &trans  &trans  &trans  &trans  &trans  &trans
-                              &trans     &trans     &trans       &trans  &trans  &trans
+        &kp TAB         &none  &none  &none      &kp P     &trans  &trans  &trans  &trans  &trans
+        &kp LEFT_SHIFT  &kp Q  &kp W  &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
+&trans  &none           &none  &none  &kp D      &kp F     &trans  &trans  &trans  &trans  &trans  &trans
+                               &kp C  &kp SPACE  &trans    &trans  &trans  &trans
             >;
         };
     };
