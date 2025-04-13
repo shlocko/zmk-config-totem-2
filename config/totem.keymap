@@ -177,10 +177,10 @@
 
         league {
             bindings = <
-        &kp TAB         &none  &none  &none      &kp P     &trans  &trans  &trans  &trans  &trans
-        &kp LEFT_SHIFT  &kp Q  &kp W  &kp E      &kp R     &trans  &trans  &trans  &trans  &trans
-&trans  &none           &none  &none  &kp D      &kp F     &trans  &trans  &trans  &trans  &trans  &trans
-                               &kp C  &kp SPACE  &trans    &trans  &trans  &trans
+              &kp TAB         &none  &none    &none      &kp P    &trans  &trans  &trans  &trans  &trans
+              &kp LEFT_SHIFT  &kp Q  &kp W    &kp E      &kp R    &trans  &trans  &trans  &trans  &trans
+&kp LEFT_ALT  &kp LCTRL       &none  &none    &kp D      &kp F    &trans  &trans  &trans  &trans  &trans  &trans
+                                     &kp ESC  &kp SPACE  &kp C    &trans  &trans  &trans
             >;
         };
     };
