@@ -80,6 +80,11 @@
             bindings = <&to 5>;
             key-positions = <4 5>;
         };
+
+        pico8_to {
+            bindings = <&to 6>;
+            key-positions = <0 9>;
+        };
     };
 
     macros {
@@ -181,6 +186,15 @@
               &kp LEFT_SHIFT  &kp Q  &kp W    &kp E      &kp R    &trans  &trans  &trans  &trans  &trans
 &kp LEFT_ALT  &kp LCTRL       &none  &none    &kp D      &kp F    &trans  &trans  &trans  &trans  &trans  &trans
                                      &kp ESC  &kp SPACE  &kp C    &trans  &trans  &trans
+            >;
+        };
+
+        layer_6 {
+            bindings = <
+        &trans  &trans          &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans
+        &kp O   &kp LEFT_ARROW  &kp UP_ARROW    &kp RIGHT_ARROW  &trans    &trans  &kp X   &kp O   &trans  &trans
+&trans  &trans  &trans          &kp DOWN_ARROW  &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                                &kp ESCAPE      &kp X            &kp O     &trans  &trans  &trans
             >;
         };
     };
