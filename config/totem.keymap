@@ -85,6 +85,11 @@
             bindings = <&to 6>;
             key-positions = <0 9>;
         };
+
+        alt {
+            bindings = <&kp LEFT_ALT>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
